@@ -11,21 +11,45 @@
 <body>
     <div class = "container">
         <div class="row mt-5">
-            <h1>로그인</h1>
+            <h1>국립재활원 콘텐츠 관리 프로그램</h1>
         </div>
 
+        <img src="url(img/logo.png)", width = "495", height="141">
         <div class="col-12">
             <br><br>
             <form method="POST" action="/GetWebPage">
                 <div class="form-group">
-                    <label>아이디</label>
-                    <input type="text" class="form-control" id="id_username" placeholder="아이디_기본값" name="id_username"/>
+                    <label>보행자 아이디</label>
+                    <input type="text" class="form-control" id="patient_id" placeholder="숫자 혹은 문자 입력" name="patient_id"/>
                 </div>
                 <div class="form-group">
-                    <label>비밀번호</label>
-                    <input type="password" class="form-control" id="id_password" placeholder="비밀번호_기본값" name="id_password"/>
+                    <label>보행자 보폭</label>
+                    <input type="number" class="form-control" id="patient_stride" placeholder="보폭 수치 입력" name="patient_stride"/>
                 </div>
+
+                <div class="form-group">
+                    <label>보행자 발 너비</label>
+                    <input type="number" class="form-control" id="patient_width" placeholder="발 너비 입력" name="patient_width"/>
+                </div>
+
+                <div class="form-group">
+                    <label>교차 영역</label>
+                    <input type="number" class="form-control" id="overlapping_area" placeholder="교차 영역 입력" name="overlapping_area"/>
+                </div>
+
+                <div class="form-group">
+                    <label>보행자 발 사이즈</label>
+                    <input type="number" class="form-control" id="foot_size" placeholder="발 사이즈 입력" name="foot_size"/>
+                </div>
+
+                <input type="radio" name="chk_info" value="content1" checked="checked">콘텐츠#1
+                <input type="radio" name="chk_info" value="content2">콘텐츠#2
+                <input type="radio" name="chk_info" value="content3">콘텐츠#3
+
+                <br><br>
+
                 <button type="submit" class="btn btn-primary">제출</button>
+
             </form>
         </div>
         </div>

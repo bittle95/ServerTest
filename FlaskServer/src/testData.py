@@ -1,6 +1,6 @@
 
 class NRCData:
-    def __init__(self, id, stride, width, area, size, content):
+    def __init__(self, id = 0, stride = 0, width = 0, area = 0, size = 0, content = 0):
         self.id = "2"
         self.stride = 0
         self.width = 0
